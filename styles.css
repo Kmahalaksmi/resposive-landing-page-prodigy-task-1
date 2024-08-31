@@ -1,0 +1,84 @@
+/* Reset some basic styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 60px; /* Offset for fixed navbar */
+    background-color: #f4f4f4; /* Default body background color */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Navbar styling */
+.navbar {
+    background: linear-gradient(45deg, #20c997, #007bff); /* Teal to blue gradient */
+    padding: 10px 20px;
+    transition: background 0.5s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    background: transparent;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #FFC107; /* Bright yellow for hover */
+    transform: scale(1.1);
+}
+
+/* Change navbar background on scroll */
+.navbar.scrolled {
+    background: linear-gradient(45deg, #0056b3, #004085); /* Darker blue gradient for scrolled state */
+}
+
+/* Boxed content styles */
+.content-box {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
